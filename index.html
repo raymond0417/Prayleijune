@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐廳菜單</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .menu-section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .menu-title {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+        }
+        .menu-items {
+            padding: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+        .menu-item:hover {
+            background-color: #f1f1f1;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-name {
+            font-size: 18px;
+        }
+        .item-price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-section">
+            <h2 class="menu-title">前菜</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-name">凱薩沙拉</div>
+                    <div class="item-price">$150</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">蒜蓉蝦</div>
+                    <div class="item-price">$180</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2 class="menu-title">主菜</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-name">炭烤牛排</div>
+                    <div class="item-price">$350</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">奶油鮭魚</div>
+                    <div class="item-price">$320</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2 class="menu-title">甜點</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-name">巧克力熔岩蛋糕</div>
+                    <div class="item-price">$120</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">焦糖布丁</div>
+                    <div class="item-price">$100</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
